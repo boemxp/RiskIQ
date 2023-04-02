@@ -1,4 +1,4 @@
-# RiskIQ
+# RiskIQ 1.0
 Python script to work with RiskIQ API to support in cybersecurity
 
 ## Feature
