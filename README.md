@@ -1,15 +1,31 @@
-# RiskIQ 1.0
-Python script to work with RiskIQ API to support in cybersecurity
+# RiskIQ API Query Tool
 
-## Feature
-- Lookup IP/Domain information from pre-defined CSV 'query_list.csv’
-- Export result to XLSX file “query_result_ddmmyy-hhmmss.xlsx”
-- Current API can lookup follow data refer Security Intelligence Services: Reputation (riskiq.net)
-    - Score
-    - Classification
-    - Rules (name, description, severity, link)
+## Description
 
--	API Key security enhancement
-    - Remove embedded API key make script more secured manner.
-    - Require user to enter API information for first time use.
-    - Validate API information, script will not be able to process if incorrect API.
+This program allows you to lookup IP/Domain information from a pre-defined CSV file using the RiskIQ API. The results can be exported to an XLSX file. The program can retrieve the following data from the RiskIQ Security Intelligence Services: Reputation:
+
+- Score
+- Classification
+- Rules (name, description, severity, link)
+
+API credentials are required to use this program. The credentials can be entered when prompted during the program's first use. The credentials are validated before the program can be run.
+
+## Usage
+
+1. Clone or download this repository to your local machine.
+2. Create a CSV file called `query_list.csv` in the root directory of the program. The CSV file should contain a list of queries to be executed.
+3. Run the program using Python 3. The program can be run using the following command:
+
+    ```
+    python3 riskiq_query_tool.py
+    ```
+
+4. Follow the prompts to enter your RiskIQ API credentials if you haven't already done so.
+
+## Output
+
+The program outputs the query results to the console and exports them to an XLSX file called `query_result_ddmmyy-hhmmss.xlsx`, where `ddmmyy-hhmmss` is the date and time that the file was created.
+
+## License
+
+This program is licensed under the MIT License. See the `LICENSE` file for more information.
